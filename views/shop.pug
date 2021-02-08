@@ -18,7 +18,7 @@ html(lang="en")
 
         main    
             if prods.length > 0    
-                //-  ☝︎☝︎ Adding an if else statement will provide a check if you have products run the code below. Or if you have none, run the else statement with the h1 text onto the screen.
+                //-  ☝︎☝︎ Adding an if else statement will provide a check if you have products( in the key: prods!) run the code below. Or if you have none, run the else statement with the h1 text onto the screen.
                 -//
                  div.grid 
                      each product in prods
@@ -26,6 +26,7 @@ html(lang="en")
                         article.card.product-item
                             header.card__header
                                 h1.product__title #{product.title}
+                                    //- #{product.title} pushes  the book title dynamically through the title key from line #18 in routes/admin.js
                             div.card__image
                                 img(src="https://cdn.pixabay.com/photo/2016/03/31/20/51/book-1296045_960_720.png", alt="A Book")    
                             div.card__content

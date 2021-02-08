@@ -6,7 +6,9 @@
 .form-control input {
     display: block;
     width: 100%;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.75rem;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 .form-control input {
