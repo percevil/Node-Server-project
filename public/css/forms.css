@@ -9,14 +9,16 @@
     margin-bottom: 0.75rem;
     font-size: 25px;
     font-weight: bold;
+    color: var(--header);
 }
 
 .form-control input {
-    border: 1px solid #a1a1a1;
+    border: 2px solid #a1a1a1;
     font: inherit;
     border-radius: 2px;
 }
 
 .form-control input:focus {
-    outline-color: #00695c;
+    outline-color: var(--hover);
+    /*  #00695c */
 }
