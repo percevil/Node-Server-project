@@ -1,22 +1,12 @@
-<!DOCTYPE html>
-html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        title #{docTitle}
-        link(rel="stylesheet", href="/css/main.css")
-        link(rel="stylesheet", href="/css/product.css")
-    body
-        header.main-header
-            nav.main-header__nav
-                ul.main-header__item-list
-                    li.main-header__item
-                        a.active(href="/") Shop
-                    li.main-header__item
-                        a(href="/admin/add-product") Add Product
+extends layouts/main-layout.pug
 
-        main    
+block styles
+      link(rel="stylesheet", href="/css/forms.css")
+      link(rel="stylesheet", href="/css/product.css")
+
+
+block content 
+    main    
             if prods.length > 0    
                 //-  ☝︎☝︎ Adding an if else statement will provide a check if you have products( in the key: prods!) run the code below. Or if you have none, run the else statement with the h1 text onto the screen.
                 -//
@@ -37,4 +27,7 @@ html(lang="en")
             else 
                 h1 No Books Found   
                  //- If no products, outputs this to the screen.
+
+
+
 
