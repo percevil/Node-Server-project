@@ -2,10 +2,14 @@ const path = require('path');
 
 const express = require('express');
 const bodyParser = require('body-parser');
+// const expressHBS = require('express-handlebars');
+//87.☝︎ Importing Handle bars. DId not need to do for PUG.
 
 const app = express();
-
-app.set('view engine', 'pug');
+// app.engine('handlebars', expressHBS());
+//87. ☝︎ Registers handle bars for use with Express. ExpressHBS() needs match names with line #5 and needs to be a function as well.
+app.set('view engine', 'ejs');
+// 87. ☝︎ Sets 'handlebars' as the templating engine we are using now (from pug).
 app.set('views', 'views');
 
 const adminData = require('./routes/admin');
