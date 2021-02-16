@@ -6,19 +6,15 @@
 .form-control input {
     display: block;
     width: 100%;
-    margin-bottom: 0.75rem;
-    font-size: 25px;
-    font-weight: bold;
-    color: var(--header);
+    margin-bottom: 0.25rem;
 }
 
 .form-control input {
-    border: 2px solid #a1a1a1;
+    border: 1px solid #a1a1a1;
     font: inherit;
     border-radius: 2px;
 }
 
 .form-control input:focus {
-    outline-color: var(--hover);
-    /*  #00695c */
+    outline-color: #00695c;
 }
